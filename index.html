@@ -1,12 +1,147 @@
 <!DOCTYPE html>
 <html lang="ko">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>JKcom</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#111827" />
+  <meta name="description" content="JKcom 앱 공간 - 작은 아이디어, 즐거운 일상. 직접 만든 앱과 게임을 소개합니다." />
+  <title>JKcom 앱 공간</title>
+  <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-  <h1>JKcom</h1>
-  <p>JKcom 앱 개발자 페이지입니다.</p>
+  <header class="topbar">
+    <a class="brand" href="#top" aria-label="JKcom 앱 공간 홈">
+      <span class="brand-mark">JK</span>
+      <span>
+        <strong>JKcom 앱 공간</strong>
+        <small>APPS · GAMES · EVERYDAY TOOLS</small>
+      </span>
+    </a>
+    <button class="menu-btn" id="menuBtn" type="button" aria-label="메뉴 열기" aria-expanded="false">☰</button>
+    <nav class="nav" id="mainNav">
+      <a href="#featured">크레키우기</a>
+      <a href="#apps">앱 둘러보기</a>
+      <a href="#community">커뮤니티</a>
+      <a href="#about">소개</a>
+    </nav>
+  </header>
+
+  <main id="top">
+    <section class="hero" id="featured">
+      <div class="hero-copy">
+        <p class="eyebrow">JKCOM FEATURED</p>
+        <h1>작은 아이디어,<br />즐거운 일상</h1>
+        <p class="hero-desc">직접 만든 앱과 게임을 한곳에서 만나보세요. 첫 번째 메인 프로젝트는 나만의 크레를 돌보고 키우는 <strong>크레키우기</strong>입니다.</p>
+        <div class="hero-actions">
+          <a class="btn primary" href="https://cre-cre.vercel.app" target="_blank" rel="noopener noreferrer">크레키우기 시작하기</a>
+          <a class="btn secondary" href="#apps">앱 둘러보기</a>
+        </div>
+      </div>
+
+      <article class="featured-card">
+        <div class="cre-scene" aria-hidden="true">
+          <span class="leaf leaf-a">◆</span>
+          <span class="leaf leaf-b">◆</span>
+          <div class="terrarium">
+            <div class="cre-face">◉‿◉</div>
+            <div class="terrarium-floor"></div>
+          </div>
+        </div>
+        <div class="featured-info">
+          <span class="badge">FEATURED GAME</span>
+          <h2>크레키우기</h2>
+          <p>먹이주기, 분무, 청소, 놀기를 하며 나만의 크레스티드 게코를 키우는 육성 게임.</p>
+          <div class="chips">
+            <span>육성</span><span>도감</span><span>모바일</span><span>웹게임</span>
+          </div>
+        </div>
+      </article>
+    </section>
+
+    <section class="section" id="apps">
+      <div class="section-heading">
+        <div>
+          <p class="eyebrow">JKCOM APPS</p>
+          <h2>앱 둘러보기</h2>
+        </div>
+        <p>JKcom에서 만들고 있는 앱과 게임을 모아두었습니다.</p>
+      </div>
+
+      <div class="app-grid">
+        <article class="app-card featured-app">
+          <div class="app-icon gecko">CRE</div>
+          <div class="app-card-body">
+            <div class="app-title-row"><h3>크레키우기</h3><span class="status live">서비스 중</span></div>
+            <p>크레스티드 게코를 돌보고 성장시키는 모바일 중심 육성 게임입니다.</p>
+            <a class="text-link" href="https://cre-cre.vercel.app" target="_blank" rel="noopener noreferrer">웹에서 시작 →</a>
+          </div>
+        </article>
+
+        <article class="app-card">
+          <div class="app-icon cycle">✓</div>
+          <div class="app-card-body">
+            <div class="app-title-row"><h3>생활주기체크</h3><span class="status preparing">출시 준비</span></div>
+            <p>청소, 침구 세탁, 필터 교체처럼 자주 잊는 생활주기를 기록하고 알림으로 관리합니다.</p>
+            <span class="text-muted">Google Play</span>
+          </div>
+        </article>
+
+        <article class="app-card muted-card">
+          <div class="app-icon more">+</div>
+          <div class="app-card-body">
+            <div class="app-title-row"><h3>다음 프로젝트</h3><span class="status preparing">준비 중</span></div>
+            <p>새로운 생활 도구와 게임을 계속 추가할 예정입니다.</p>
+            <span class="text-muted">Coming soon</span>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="section community" id="community">
+      <div class="section-heading">
+        <div>
+          <p class="eyebrow">COMMUNITY</p>
+          <h2>같이 이야기하는 공간</h2>
+        </div>
+        <p>앱 의견, 버그 제보, 아이디어를 나누는 커뮤니티 기능을 준비하고 있습니다.</p>
+      </div>
+      <div class="community-grid">
+        <div class="community-box">
+          <span class="community-icon">💬</span>
+          <h3>게시판</h3>
+          <p>앱별 후기와 아이디어를 자유롭게 남기는 공간.</p>
+          <button class="ghost-btn" type="button" data-coming-soon>준비 중</button>
+        </div>
+        <div class="community-box">
+          <span class="community-icon">👤</span>
+          <h3>회원 공간</h3>
+          <p>닉네임으로 활동하고 내가 쓴 글을 관리하는 기능.</p>
+          <button class="ghost-btn" type="button" data-coming-soon>준비 중</button>
+        </div>
+      </div>
+    </section>
+
+    <section class="section about" id="about">
+      <div>
+        <p class="eyebrow">ABOUT JKCOM</p>
+        <h2>필요한 걸 직접 만들어 씁니다.</h2>
+      </div>
+      <p>JKcom은 생활에서 불편했던 작은 문제를 앱과 게임으로 해결해보는 개인 개발 공간입니다. 복잡한 기능보다 실제로 자주 쓰고 즐길 수 있는 경험을 만드는 것을 목표로 합니다.</p>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div>
+      <strong>JKcom 앱 공간</strong>
+      <p>작은 아이디어, 즐거운 일상</p>
+    </div>
+    <div class="footer-links">
+      <a href="/app-ads.txt">app-ads.txt</a>
+      <span>© <span id="year"></span> JKcom</span>
+    </div>
+  </footer>
+
+  <div class="toast" id="toast" role="status" aria-live="polite">준비 중인 기능입니다.</div>
+  <script src="script.js"></script>
 </body>
 </html>
